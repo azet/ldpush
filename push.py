@@ -308,7 +308,7 @@ def main(argv):
       for device, error in connect_fail:
         print '#!# %s:ConnectError #!#\n%s' % (device, error)
   if config_fail:
-    print '\nSetting config failed:\n%s\n' % ','.join(
+    print '\nSetting config failed:\n%s\n' % ', '.join(
         [x for x, _ in config_fail])
     if FLAGS.verbose:
       for device, error in connect_fail:
